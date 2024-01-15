@@ -2,7 +2,23 @@
 @media screen and (max-width: 600px){
     header {
     }
-        .nav-section, .nav-section ul {
-        flex-direction: column;
+        .nav-section, .nav-section ul, .banner-container,.banner-input-section {
+        flex-direction: column; 
+    }
+      
+    .banner-container {
+        padding: 20px;
+        height: auto;
+        gap: 10px;
+    }
+    
+    .banner-description-section h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }   
+    
+    .banner-input-section > input, select, .btn-fin-now {
+    width: 100%;
     }
 }
