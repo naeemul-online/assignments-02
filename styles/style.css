@@ -346,3 +346,34 @@ main {
     right: 5px;
     transform: rotate(-22deg);
 }
+
+
+/* footer styles */
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    padding: 200px 100px;
+    text-align: center;
+}
+.footer-logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.footer-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+.social-icons {
+    font-size: 2rem;
+}
+.fa-brands {
+    margin-right: 20px;
+}
+.copyright {
+    margin-top: 50px;
+}

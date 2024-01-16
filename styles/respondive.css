@@ -14,7 +14,7 @@
         flex-direction: column;
     }
 
-    .banner-container {
+    .banner-container, footer,footer-header {
         padding: 20px;
         height: auto;
         gap: 10px;
@@ -36,9 +36,9 @@
         display: flex;
         flex-direction: column;
     }
-
+}
 @media screen and (min-width: 600px) and (max-width: 992px) {
-    .nav-section,news-letter-container {
+    .nav-section,news-letter-container, .cart-section1 {
         padding: 0;
         flex-direction: column;
     }
