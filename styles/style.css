@@ -293,3 +293,56 @@ main {
     width: 550px;
     margin: 0 auto;
 }
+
+/* News letter Related Styles here */
+.news-letter {
+    margin: 100px auto;
+}
+.news-letter-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+
+}
+.news-letter-form {
+    
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+    width: 40%;
+    padding: 20px;
+    /* border: 2px solid red; */
+}
+.news-letter-form form {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+}
+.news-letter-form form input{
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+
+
+}
+.news-letter-form form button {
+    width: 100%;
+    cursor: pointer;
+}
+.new-letter-images {
+    text-align: center;
+    position: relative;
+}
+.save-up-box {
+    color: #FFF;
+    padding: 20px;
+    width: 300px;
+    background-color: #FF5400;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 60px;
+    right: 5px;
+    transform: rotate(-22deg);
+}
