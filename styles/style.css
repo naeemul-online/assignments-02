@@ -217,7 +217,11 @@ main {
 }
 
 .destination-gallery {
-
+    
+    font-size: 1.8rem;
+    font-weight: 800;
+    
+    color: #fff;
     display: grid;
     gap: 20px;
     grid-template-areas:
@@ -228,33 +232,54 @@ main {
 }
 
 .destination-gallery .img-1 {
+    position: relative;
+    text-align: center;
     grid-area: h;
 }
 
 .destination-gallery .img-2 {
+    position: relative;
+    text-align: center;
     width: 100%;
     grid-area: h2;
 }
 
 .destination-gallery .img-3 {
+    position: relative;
+    text-align: center;
     grid-area: m1;
 }
 
 .destination-gallery .img-4 {
+    position: relative;
+    text-align: center;
     grid-area: m2;
 }
 
 .destination-gallery .img-5 {
+    position: relative;
+    text-align: center;
     grid-area: m3;
 }
 
 .destination-gallery .img-6 {
+    position: relative;
+    text-align: center;
     grid-area: f1;
 }
 
 .destination-gallery .img-7 {
+    position: relative;
+    text-align: center;
     grid-area: f;
 }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 /* Choose use related styles here */
 .cart-container {
@@ -263,7 +288,7 @@ main {
     gap: 30px;
 }
 
-.cart-section1 {    
+.cart-section1 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -277,10 +302,17 @@ main {
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     color: #131318;
-    font-size: 24px;
     font-weight: 800;
 }
 
+.cart-section1 .cart-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.icon {
+    font-size: 4rem;
+}
 
 .cart h2 {
     color: #131318;
@@ -298,28 +330,31 @@ main {
 .news-letter {
     margin: 100px auto;
 }
+
 .news-letter-container {
     display: flex;
     justify-content: center;
     gap: 20px
-
 }
+
 .news-letter-form {
-    
+
     border: 1px solid #FF5400;
     border-radius: 16px;
     width: 40%;
     padding: 20px;
     /* border: 2px solid red; */
 }
-.news-letter-form form {    
+
+.news-letter-form form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
 
 }
-.news-letter-form form input{
+
+.news-letter-form form input {
     padding: 20px;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
@@ -327,14 +362,17 @@ main {
 
 
 }
+
 .news-letter-form form button {
     width: 100%;
     cursor: pointer;
 }
+
 .new-letter-images {
     text-align: center;
     position: relative;
 }
+
 .save-up-box {
     color: #FFF;
     padding: 20px;
@@ -355,12 +393,14 @@ footer {
     padding: 200px 100px;
     text-align: center;
 }
+
 .footer-logo-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
 }
+
 .footer-header {
     display: flex;
     justify-content: center;
@@ -368,12 +408,15 @@ footer {
     gap: 20px;
     font-size: 2rem;
 }
+
 .social-icons {
     font-size: 2rem;
 }
+
 .fa-brands {
     margin-right: 20px;
 }
+
 .copyright {
     margin-top: 50px;
 }
