@@ -21,7 +21,6 @@ body {
 }
 
 .text-gray {
-
     color: #424247;
     font-size: 1rem;
 }
@@ -91,12 +90,12 @@ header {
     color: #fff;
     text-align: center;
     border-radius: 16px;
-    
+
 
 }
 
 .banner-container {
-    
+    margin: 0 auto;
     padding: 200px;
     height: auto;
     display: flex;
@@ -122,15 +121,175 @@ header {
     justify-content: center;
     align-items: center;
 }
-.btn-fin-now {
-    display:inline-block;
+
+.btn-find-now {
+    display: inline-block;
     background: #FF5400;
     cursor: pointer;
 }
-.banner-input-section > input, select, .btn-fin-now {
+
+.banner-input-section>input,
+select,
+.btn-find-now {
     /* border: 1px solid red; */
     padding: 16px 20px;
     border: none;
     border-radius: 8px;
     flex-basis: 25%;
+}
+
+/* Main Section Common Styles */
+main {
+    max-width: 1170px;
+    margin: 50px auto;
+}
+
+.common-title {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.btn-primary {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+/* Popular Section Related Styles here */
+.popular {
+    display: flex;
+    justify-content: center;
+
+}
+
+.popular-content-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.popular-title,
+.popular-description,
+.unorder-list,
+.popular-summery {
+    margin-bottom: 25px;
+}
+
+.unorder-list {
+    margin-left: 20px;
+}
+
+.unorder-list li {
+    margin-bottom: 25px;
+}
+
+.popular-image-section {
+    width: 50%;
+}
+
+/* Destination Section Styles */
+.destination {
+    margin: 48px auto;
+}
+
+.destination-content {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.destionation-title {
+    margin-bottom: 20px;
+}
+
+.destination-gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.destination-gallery {
+
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "h h h h h h h2 h2 h2 h2 h2 h2"
+        "m1 m1 m1 m2 m2 m2 m2 m2 m2 m3 m3 m3"
+        "f1 f1 f1 f1 f f f f f f f f"
+    ;
+}
+
+.destination-gallery .img-1 {
+    grid-area: h;
+}
+
+.destination-gallery .img-2 {
+    width: 100%;
+    grid-area: h2;
+}
+
+.destination-gallery .img-3 {
+    grid-area: m1;
+}
+
+.destination-gallery .img-4 {
+    grid-area: m2;
+}
+
+.destination-gallery .img-5 {
+    grid-area: m3;
+}
+
+.destination-gallery .img-6 {
+    grid-area: f1;
+}
+
+.destination-gallery .img-7 {
+    grid-area: f;
+}
+
+/* Choose use related styles here */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cart-section1 {    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cart {
+    padding: 32px;
+    width: 550px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+.cart h2 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px auto;
+}
+
+.cart-section2 {
+    width: 550px;
+    margin: 0 auto;
 }

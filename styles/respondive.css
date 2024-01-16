@@ -1,24 +1,66 @@
 /* Media Queries Small Devices */
-@media screen and (max-width: 600px){
-    header {
+@media screen and (max-width: 600px) {
+    .nav-section {
+        padding: 0;
     }
-        .nav-section, .nav-section ul, .banner-container,.banner-input-section {
-        flex-direction: column; 
+
+    .nav-section,
+    .nav-section ul,
+    .banner-container,
+    .banner-input-section,
+    .popular,
+    .cart-section1{
+        flex-direction: column;
     }
-      
+
     .banner-container {
         padding: 20px;
         height: auto;
         gap: 10px;
     }
-    
+
     .banner-description-section h2 {
         font-size: 2rem;
         font-weight: 400;
         margin-bottom: 10px;
-    }   
-    
-    .banner-input-section > input, select, .btn-fin-now {
-    width: 100%;
+    }
+
+    .banner-input-section>input,
+    select,
+    .btn-find-now {
+        width: 100%;
+
+    }
+    .destination-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .nav-section {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .banner-container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .banner-description-section h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .banner-input-section>input,
+    select,
+    .btn-find-now {
+        width: 80%;
+    }
+
+    .popular-content-section {
+        width: 80%;
     }
 }
