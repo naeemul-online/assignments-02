@@ -111,6 +111,7 @@ header {
 }
 
 .banner-input-section {
+    font-size: 1rem;
     padding: 16px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
@@ -120,6 +121,9 @@ header {
     gap: 16px;
     justify-content: center;
     align-items: center;
+}
+#when, #select-type {
+    color: rgba(19, 19, 24, 0.50);
 }
 
 .btn-find-now {
@@ -240,7 +244,6 @@ main {
 .destination-gallery .img-2 {
     position: relative;
     text-align: center;
-    width: 100%;
     grid-area: h2;
 }
 
@@ -249,6 +252,11 @@ main {
     text-align: center;
     grid-area: m1;
 }
+
+#img-3 {    
+    width: auto;
+}
+
 
 .destination-gallery .img-4 {
     position: relative;
