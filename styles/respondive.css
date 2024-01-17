@@ -10,14 +10,18 @@
     .banner-input-section,
     .popular,
     .cart-section1,
-    .news-letter-container{
+    .news-letter-container,
+    .mountain {
         flex-direction: column;
     }
-    #img-3 {    
+
+    #img-3 {
         width: 100%;
     }
 
-    .banner-container, footer,footer-header {
+    .banner-container,
+    footer,
+    footer-header {
         padding: 20px;
         height: auto;
         gap: 10px;
@@ -31,18 +35,33 @@
 
     .banner-input-section>input,
     select,
-    .btn-find-now, .new-letter-images, .news-letter-form {
+    .btn-find-now,
+    .new-letter-images,
+    .news-letter-form {
         width: 100%;
 
     }
+
     .destination-gallery {
         display: flex;
         flex-direction: column;
     }
 
+    .deals-banner1,
+    .deals-banner2 {
+        padding: 50px 20px;
+        left: 0;
+        top: 100px;
+    }
+
 }
+
+/* Media Queries fro large devices */
 @media screen and (min-width: 600px) and (max-width: 992px) {
-    .nav-section,news-letter-container, .cart-section1 {
+
+    .nav-section,
+    news-letter-container,
+    .cart-section1 {
         padding: 0;
         flex-direction: column;
     }
@@ -67,4 +86,13 @@
     .popular-content-section {
         width: 80%;
     }
+
+    .deals-banner1 {
+        padding: 50px 20px;
+        left: 320px;
+        top: 100px;
+    }
+
+
+
 }

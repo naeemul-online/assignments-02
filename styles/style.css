@@ -16,6 +16,11 @@ body {
     margin: 0 auto;
 }
 
+section {
+    margin-top: 50px;
+
+}
+
 .orange-color {
     color: #FF5400;
 }
@@ -122,7 +127,9 @@ header {
     justify-content: center;
     align-items: center;
 }
-#when, #select-type {
+
+#when,
+#select-type {
     color: rgba(19, 19, 24, 0.50);
 }
 
@@ -145,7 +152,7 @@ select,
 /* Main Section Common Styles */
 main {
     max-width: 1170px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .common-title {
@@ -164,6 +171,7 @@ main {
     text-align: center;
     font-size: 1.25rem;
     font-weight: 800;
+    cursor: pointer;
 }
 
 /* Popular Section Related Styles here */
@@ -174,7 +182,6 @@ main {
 }
 
 .popular-content-section {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,10 +228,10 @@ main {
 }
 
 .destination-gallery {
-    
+
     font-size: 1.8rem;
     font-weight: 800;
-    
+
     color: #fff;
     display: grid;
     gap: 20px;
@@ -239,21 +246,40 @@ main {
     position: relative;
     text-align: center;
     grid-area: h;
+    cursor: pointer;
+    opacity: 0.8;
+    
+}
+.destination-gallery .img-1:hover {
+    opacity: 1;
+    
 }
 
 .destination-gallery .img-2 {
     position: relative;
     text-align: center;
     grid-area: h2;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.destination-gallery .img-2:hover {
+    opacity: 1;
+    
 }
 
 .destination-gallery .img-3 {
     position: relative;
     text-align: center;
     grid-area: m1;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.destination-gallery .img-3:hover {
+    opacity: 1;
+    
 }
 
-#img-3 {    
+#img-3 {
     width: auto;
 }
 
@@ -262,24 +288,48 @@ main {
     position: relative;
     text-align: center;
     grid-area: m2;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.destination-gallery .img-4:hover {
+    opacity: 1;
+    
 }
 
 .destination-gallery .img-5 {
     position: relative;
     text-align: center;
     grid-area: m3;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.destination-gallery .img-5:hover {
+    opacity: 1;
+    
 }
 
 .destination-gallery .img-6 {
     position: relative;
     text-align: center;
     grid-area: f1;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.destination-gallery .img-6:hover {
+    opacity: 1;
+    
 }
 
 .destination-gallery .img-7 {
     position: relative;
     text-align: center;
     grid-area: f;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.destination-gallery .img-7:hover {
+    opacity: 1;
+    
 }
 
 .centered {
@@ -287,7 +337,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 /* Choose use related styles here */
 .cart-container {
@@ -332,6 +382,72 @@ main {
 .cart-section2 {
     width: 550px;
     margin: 0 auto;
+}
+
+/* Deals and discounts section related styles here */
+.deals-banner-container1 {
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+    height: 500px;
+    background-image: url('../images/deals-image1.png');
+    border-radius: 16px;
+}
+
+.deals-banner1 {
+    width: 550px;
+    height: 390px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: relative;
+    left: 500px;
+    top: 50px;
+    padding: 50px;
+}
+
+.deals-banner-container2 {
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+    height: 500px;
+    background-image: url('../images/deals-image1.png');
+    border-radius: 16px;
+}
+
+.deals-banner2 {
+    width: 580px;
+    height: 390px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: relative;
+    right: -50px;
+    top: 50px;
+    padding: 50px;
+}
+
+.delas-banner-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.banner-cart-icons i {
+    margin-right: 25px;
+}
+
+.common-title2 {
+    color: #131318;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+
+.banner-cart-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* News letter Related Styles here */
@@ -391,8 +507,22 @@ main {
     bottom: 60px;
     right: 5px;
     transform: rotate(-22deg);
+    cursor: pointer;
 }
 
+/* Mountains Section styles */
+
+.mountain {
+    margin-bottom: 50px;
+    display: flex;
+
+}
+
+.mountain video {
+    border-radius: 16px;
+    object-fit: cover;
+    background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%);
+}
 
 /* footer styles */
 
@@ -417,8 +547,9 @@ footer {
     font-size: 2rem;
 }
 
-.social-icons {
+.social-icons i{
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .fa-brands {
